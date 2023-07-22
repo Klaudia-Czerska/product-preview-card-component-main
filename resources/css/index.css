@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.photo {
+    height: 50vh;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: calc(50vh - 60px);
+    justify-content: space-between;
+    padding: 30px 40px;
+    width: calc(340px - 80px);
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: Fraunces;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 35px;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.price {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.sale {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 30px;
+}
+
+.regular {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: hsl(160, 48%, 18%);
+    cursor: pointer;
+}
+
+.attribution { 
+    bottom: 0;
+    font-size: 11px; 
+    position: absolute;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+    }
+    .photo {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        max-height: 40vh;
+        object-fit: cover;
+        width: 340px;
+    }
+
+    .card {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 20px;
+        width: calc(340px - 40px);
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}
